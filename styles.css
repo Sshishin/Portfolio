@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+  
+}
+
+@font-face {
+	font-family: 'Inter-Medium'; 
+	src: url('./fonts/Inter-Medium.woff')format('woff'); 
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter-Regular'; 
+	src: url('./fonts/Inter-Regular.woff')format('woff'); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1240px;
+   margin: 0 auto;
+}
+
+body {
+    background-color: #0e0d40;
+    color: aliceblue;
+    padding: 100px;
+    margin: 0;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.higher-text {
+     display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 20px;
+    font-family: 'Inter-Medium';
+    font-size: 22px;
+    text-transform: uppercase;
+    
+}
+
+.list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.list-item {
+     font-family: 'Inter-Medium';
+    font-size: 16px; 
+    font-weight: normal;
+    z-index: 3;
+}
+
+
+.list-item:hover {
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+}
+
+.item-link {
+    text-decoration: none;
+    color: white;
+}
+
+.item-link:hover {
+    
+}
+
+.container-top {
+    margin-bottom: 235px;
+}
+
+
+.hero-text {
+    max-width: 600px;
+    margin: 0;
+   
+}
+
+
+/*Не адаптируется текст*/
+
+.relative {
+     float: right;
+position: relative;
+bottom: 200px;
+right: 515px;
+}
+
+.absolute {
+    position: absolute;
+    
+   
+    
+}
+
+/*.men {
+  float: right;
+position: relative;
+bottom: 200px;
+}*/
+
+
+.hero {
+    margin-bottom: 300px;
+}
+
+
+
+.about-men {
+    width: 348px;
+    height: 429px;
+     float: left;
+    position: relative;
+    bottom: 50px;
+}
+
+.about {
+   margin-bottom: 500px;
+
+}
+
+.about-text {
+    max-width: 600px;
+   margin: 0;
+float: right;
+}
+
+
+
+.projects {
+display: flex;
+flex-wrap: wrap;
+}
+
+.project-item:not(:nth-last-child(3)) {
+    margin-right: 15px;
+    padding-bottom: 50px;
+}
+
+
+.pg {
+     border-radius: 10%;
+    margin-bottom: px;
+}
+ 
+
+
+.about-header {
+    clear: both;
+    text-align:center;
+    padding-bottom: 125px;
+    margin: 0;
+    font-family: 'Inter-Medium';
+    font-size: 22px; 
+    font-weight: normal;
+    
+}
+
+
+.mail {
+ text-align: center;
+padding-bottom: 100px;
+}
+
+.social-list {
+     list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.fb {
+    width: 25px;
+}
+
+.tw {
+    width: 25px;
+}
+
+.in {
+    width: 25px;
+}
+
+.gg {
+    width: 25px;
+}
+
+
+
+.ft-text {
+     display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 40px;
+    font-family: 'Inter-Medium';
+    font-size: 20px;
+
+}
+
+.cp {
+     display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 40px;
+    font-family: 'Inter-Medium';
+    font-size: 10px;
+    align-items: center;
+}
+
+.hero-button {
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    font-family: 'Inter-Medium';
+    font-size: 16px;  
+    font-weight: normal;
+    margin-left: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.hero-button:hover {
+    transform: scale(1.2)
+    
+}
+
+.item-btn {
+      background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    text-transform: uppercase;
+    font-family: 'Inter-Medium';
+    margin-right: 10px;
+    cursor:pointer;
+}
+
+.item-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.surname {
+    font-family: 'Inter-Medium';
+    font-size: 22px;
+    text-transform: uppercase;  
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 24px;
+    
+}
+
+.myname {
+    font-family: 'Inter-Medium';
+    font-size: 40px;
+    text-transform: uppercase;  
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.float-text {
+    margin: 0;
+    margin-bottom: 48px;
+    line-height: 28px;
+    font-family: 'Inter-Regular';
+    font-size: 15px;
+}
+
+.ll {
+    margin: 0;
+    margin-bottom: 48px;
+    line-height: 28px;
+    font-family: 'Inter-Regular';
+    font-size: 15px;
+}
+
+.card-header {
+        font-family: 'Inter-Medium';
+    font-size: 16px;  
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+
+.ff {
+	position: relative;
+
+}
+
+.dark {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 397px;
+    bottom: 4.2px;
+    display: none;
+    opacity: .5;
+    border-radius: 10%;
+
+}
+
+.ff:hover .dark {
+    display: block;
+}
+
+.bat {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Inter-Medium';
+    font-size: 16px;
+}
+
+.bat2 {
+    position: absolute;
+    left: 132px;
+    top: 200px;
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+    font-family: 'Inter-Medium';
+    font-size: 16px;
+}
+
+.bat:hover {
+    background-color: white;
+    color: black;
+}
+
+.bat2:hover {
+    background-color: white;
+    color: black;
+}
+
+.ff:hover .bat {
+    display: block;
+}
+
+.ff:hover .bat2 {
+    display: block;
+}
+
+.footer-descr {
+     font-family: 'Inter-Medium';
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.footer-descr2 {
+     font-family: 'Inter-Medium';
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.mailto {
+    text-decoration: none;
+     font-family: 'Inter-Medium';
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+    margin: 0;
+}
+
+.crr {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+/*применяется только для элемента у которого присутствует оба класса сразу
+.test3.test2 {
+    background: red;
+    width: 100px;
+}
+
+.test2 {
+    font-size: 30px;
+}
+
+article p {
+    color: red;
+}
+
+.te .ty {
+    border: red solid 1px;
+}
+
+применяется для элементов p которые находятся в родительском элементе article
+
+article>p {
+    color: green;
+}
+для непосредственно дочерних элементов
+
+h1~p {
+    color: purple;
+}
+для всех соседних элементов которые идут после h1
+
+h1+p {
+    color: purple;
+}
+для p котрые непосредственно сразу идут за h1
+
+p[title] {
+    color: blue;
+}
+для выбора по атрибуту
+
+p[title=hh] {
+    color: aqua;
+}
+для атрибута с конкретным значением
+
+p[title*="kk"] {
+    color: aqua;
+}
+выделение на основе части атрибута
+
+p[title^="hh"] {
+    color: aqua;
+}
+выделение исходя из того на какие значения атрибут начинается
+
+p[title$="ur"] {
+    color: aqua;
+}
+выделение исходя из того на какие значения атрибут заканчивается*/
