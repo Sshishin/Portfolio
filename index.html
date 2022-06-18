@@ -7,125 +7,139 @@
         <link rel="stylesheet" href="normalize.css">
     </head>
     <body>
+        
         <header>
-            <div class="container container-top">
-                <span class="higher-text">Всd<br>хождение</span>
+            <div class="container">
+                <span class="header-span">Вос<br>хождение</span>
+                
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li class="list-item"><a class="item-link" href="#ab">Обо мне</a></li>
-                        <li class="list-item"><a class="item-link" href="#pr">Проекты</a></li>
-                        <li class="list-item"><a class="item-link" href="#cnt">Контакты</a></li>
+                        <li class="menu-list__item"><a class="menu__item-link" href="#about-id">Обо мне</a></li>
+                        <li class="menu-list__item"><a class="menu__item-link" href="#pr">Проекты</a></li>
+                        <li class="menu-list__item"><a class="menu__item-link" href="#footer-id">Контакты</a></li>
                     </ul>
                 </nav>
+
             </div>
         </header>
+        
         <main>
             <div class="container">
+                
                 <div class="hero">
-                            <img class="men" src="img/bg.png" alt="men">
+                    <img class="hero__men" src="img/bg.png" alt="men">
+                </div>
+            </div>
+                    
+                <div class="hero-text clearfix">
+                    <h2 class="hero-text__surname">Шишин Сергей</h2>
+                    <h1 class="hero-text__myname">Фронтенд разработчик</h1>
+                    <p class="hero-text__subtitle">I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.</p>
+                    <a href="mailto:sshishin@zoon.ru"><button type="button" class="hero-text__button">Связаться</button></a>
+                </div>
+
+                <div id="about-id" class="about">
+                    <h3 class="about__header">Обо мне</h3>
+                        <div class="wrapper about__wrapper">
+                            <img class="wrapper__men" src="img/bg.png" alt="men">
+                            <div class="about__text">
+                                <p class="about__subtitle">I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.
+                                I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.</p>
+                                <a href="mailto:sshishin@zoon.ru"><button type="button" class="about-button">Связаться</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="hero-text clearfix">
-                        <h2 class="surname">Шишин Сергей</h2>
-                        <h1 class="myname">Фронтенд разработчик</h1>
-                        <p class="float-text">I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.</p>
-                            <a href="mailto:sshishin@zoon.ru"><button type="button" class="hero-button">Связаться</button></a>
-                    </div>
                 </div>
-                <div id="ab" class="about">
-                    <h3 class="about-header">Обо мне</h3>
-                    <div class="cont">
-                    <img class="about-men" src="img/bg.png" alt="men">
-                    <div class="about-text">
-                    <p class="ll">I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.
-I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.I implement user interface design and solve user problems with HTML, CSS AND Javascript. I have 2 years of making products that solve user problems and implementing responsive website.</p>
-                    <a href="mailto:sshishin@zoon.ru"><button type="button" class="hero-button">Связаться</button></a>
-                </div>
-                    </div>
-                </div>
+                
                 <div class="projects">
-                    <div class="project-item first">
-                        <div class="ff">
-                            <img class="pg" src="img/pg.png" alt="site">
-                            <a href="../MaxGraph/index.html"><div class="dark"></div></a>
-                                <a href="../MaxGraph/index.html"><button class="bat">Перейти</button></a>
-                                <a href="http://github.com"><button class="bat2">Показать код</button></a>
+                    <div class="item projects__item">
+                        <div class="card-wrapper first-item__wrapper">
+                            <img class="card-wrapper__img" src="img/pg.png" alt="site">
+                            <a href="../MaxGraph/index.html"><div class="card-wrapper__click"></div></a>
+                                <a href="../MaxGraph/index.html"><button class="card-wrapper__btn-1">Перейти</button></a>
+                                <a href="http://github.com"><button class="card-wrapper__btn-2">Показать код</button></a>
                         </div>
-                        <h4 class="card-header">Финтех доска</h4>
-                        <a href="../MaxGraph/index.html"><button type="button" class="item-btn">Html</button></a>
-                       <a href="../MaxGraph/css/style.css"><button type="button" class="item-btn">Css</button></a>
+                            <h4 class="card__item">Финтех доска</h4>
+                            <a href="../MaxGraph/index.html"><button type="button" class="item__btn">Html</button></a>
+                            <a href="../MaxGraph/css/style.css"><button type="button" class="item__btn">Css</button></a>
                     </div>
-                    <div class="project-item second">
-                        <div class="ff">
-                            <img class="pg" src="img/pg.png" alt="site">
-                            <div class="dark"></div>
-                            <a href="../MaxGraph/index.html"><button class="bat">Перейти</button></a>
-                            <a href="http://github.com"><button class="bat2">Показать код</button></a>
+
+                    <div class="item projects__item">
+                        <div class="card-wrapper second-item__wrapper">
+                            <img class="card-wrapper__img" src="img/pg.png" alt="site">
+                            <div class="card-wrapper__click"></div>
+                            <a href="../MaxGraph/index.html"><button class="card-wrapper__btn-1">Перейти</button></a>
+                            <a href="http://github.com"><button class="card-wrapper__btn-2">Показать код</button></a>
                         </div>
-                        <h4 class="card-header">Интернет магазин</h4>
-                        <a href="../MaxGraph/index.html"><button type="button" class="item-btn">Html</button></a>
-                        <a href="../MaxGraph/css/style.css"><button type="button" class="item-btn">Css</button></a>
-                    </div>  
-                     <div class="project-item three">
-                        <div class="ff">
-                            <img class="pg" src="img/pg.png" alt="site">
-                            <div class="dark"></div>
-                            <a href="../MaxGraph/index.html"><button class="bat">Перейти</button></a>
-                            <a href="http://github.com"><button class="bat2">Показать код</button></a>
-                        </div>
-                        <h4 class="card-header">Тик-Ток</h4>
-                        <a href="../MaxGraph/index.html"><button type="button" class="item-btn">Html</button></a>
-                        <a href="../MaxGraph/css/style.css"><button type="button" class="item-btn">Css</button></a>
+                            <h4 class="card__item">Интернет магазин</h4>
+                            <a href="../MaxGraph/index.html"><button type="button" class="item__btn">Html</button></a>
+                            <a href="../MaxGraph/css/style.css"><button type="button" class="item__btn">Css</button></a>
                     </div>
-                     <div class="project-item four">
-                        <div class="ff">
-                            <img class="pg" src="img/pg.png" alt="site">
-                            <div class="dark"></div>
-                            <a href="../MaxGraph/index.html"><button class="bat">Перейти</button></a>
-                            <a href="http://github.com"><button class="bat2">Показать код</button></a>
+
+                     <div class="item projects__item">
+                        <div class="card-wrapper three-item__wrapper">
+                            <img class="card-wrapper__img" src="img/pg.png" alt="site">
+                            <div class="card-wrapper__click"></div>
+                            <a href="../MaxGraph/index.html"><button class="card-wrapper__btn-1">Перейти</button></a>
+                            <a href="http://github.com"><button class="card-wrapper__btn-2">Показать код</button></a>
                         </div>
-                        <h4 class="card-header">Интернет магазин</h4>
-                        <a href="../MaxGraph/index.html"><button type="button" class="item-btn">Html</button></a>
-                        <a href="../MaxGraph/css/style.css"><button type="button" class="item-btn">Css</button></a>
+                            <h4 class="card__item">Тик-Ток</h4>
+                            <a href="../MaxGraph/index.html"><button type="button" class="item__btn">Html</button></a>
+                            <a href="../MaxGraph/css/style.css"><button type="button" class="item__btn">Css</button></a>
                     </div>
-                     <div class="project-item five">
-                        <div class="ff">
-                            <img class="pg" src="img/pg.png" alt="site">
-                            <div class="dark"></div>
-                            <a href="../MaxGraph/index.html"><button class="bat">Перейти</button></a>
-                            <a href="http://github.com"><button class="bat2">Показать код</button></a>
+                    
+                     <div class="item projects__item">
+                        <div class="card-wrapper four-item__wrapper">
+                            <img class="card-wrapper__img" src="img/pg.png" alt="site">
+                            <div class="card-wrapper__click"></div>
+                            <a href="../MaxGraph/index.html"><button class="card-wrapper__btn-1">Перейти</button></a>
+                            <a href="http://github.com"><button class="card-wrapper__btn-2">Показать код</button></a>
                         </div>
-                        <h4 class="card-header">Финтех доска</h4>
-                        <a href="../MaxGraph/index.html"><button type="button" class="item-btn">Html</button></a>
-                        <a href="../MaxGraph/css/style.css"><button type="button" class="item-btn">Css</button></a>
+                            <h4 class="card__item">Интернет магазин</h4>
+                            <a href="../MaxGraph/index.html"><button type="button" class="item__btn">Html</button></a>
+                            <a href="../MaxGraph/css/style.css"><button type="button" class="item__btn">Css</button></a>
+                    </div>
+
+                     <div class="item projects__item">
+                        <div class="card-wrapper five-item__wrapper">
+                            <img class="card-wrapper__img" src="img/pg.png" alt="site">
+                            <div class="card-wrapper__click"></div>
+                            <a href="../MaxGraph/index.html"><button class="card-wrapper__btn-1">Перейти</button></a>
+                            <a href="http://github.com"><button class="card-wrapper__btn-2">Показать код</button></a>
+                        </div>
+                            <h4 class="card__item">Финтех доска</h4>
+                            <a href="../MaxGraph/index.html"><button type="button" class="item__btn">Html</button></a>
+                            <a href="../MaxGraph/css/style.css"><button type="button" class="item__btn">Css</button></a>
                     </div>
                 </div>
             </div>
         </main>
+
         <footer>
             <div class="container">
-                <div id="cnt" class="footer">
-                    <div class="mail">
-                    <p class="footer-descr">Хочешь со мной связаться?</p>
-                    <p class="footer-descr2">Мои контакты! </p>
-                    <address >
-                    <a class="mailto" href="mailto:sshishin@zoon.ru">sshishin@zoon.ru</a>
-                    </address>
+                <div id="footer-id" class="footer">
+                    <div class="footer__mail">
+                        <p class="footer__subtitle-1">Хочешь со мной связаться?</p>
+                        <p class="footer__subtitle-2">Мои контакты! </p>
+                            <address >
+                                <a class="footer__mailto" href="mailto:sshishin@zoon.ru">sshishin@zoon.ru</a>
+                            </address>
                     </div>
-                    <div class="end">
-                        <span class="ft-text">Вос<br>хождение</span>
+                    <div class="footer__end">
+                        <span class="footer__span">Вос<br>хождение</span>
                     </div>
-                    <div class="social">
-                        <ul class="social-list">
-                            <li class="social-item "><img class="fb" src="img/fb.png" alt="fb"></li>
-                            <li class="social-item "><img class="tw" src="img/tw.png" alt="tw"></li>
-                            <li class="social-item "><img class="in" src="img/in.png" alt="in"></li>
-                            <li class="social-item "><img class="gg" src="img/gg.png" alt="gg"></li>
+                    <div class="social footer__social">
+                        <ul class="social__list">
+                            <li class="social__item "><img class="social__item--fb" src="img/fb.png" alt="fb"></li>
+                            <li class="social__item "><img class="social__item--tw" src="img/tw.png" alt="tw"></li>
+                            <li class="social__item "><img class="social__item--in" src="img/in.png" alt="in"></li>
+                            <li class="social__item "><img class="social__item--gg" src="img/gg.png" alt="gg"></li>
                         </ul>
                     </div>
-                    <span class="cp"><img class="crr"src="img/Vector.png" alt="cr">Восхождение 2022</span>
+                    <span class="footer__logo"><img class="footer__img"src="img/Vector.png" alt="footer-logo">Восхождение 2022</span>
                 </div>
             </div>
+
+            
             <!-- Тестирование применения классов
                 <div class="test3">
                 <button class="test2">тест</button>
