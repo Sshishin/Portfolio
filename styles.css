@@ -74,7 +74,7 @@ body {
 }
 
 .container-top {
-    margin-bottom: 235px;
+    margin-bottom: 150px;
 }
 
 
@@ -84,6 +84,13 @@ body {
    
 }
 
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    margin-bottom: px;
+    display: block;
+}
 
 /*Не адаптируется текст*/
 
@@ -101,43 +108,53 @@ right: 515px;
     
 }
 
-/*.men {
+.men {
   float: right;
+width: 300px;
 position: relative;
-bottom: 200px;
-}*/
+bottom: 100px;
+}
 
 
 .hero {
-    margin-bottom: 300px;
+   
 }
 
 
 
 .about-men {
-    width: 348px;
-    height: 429px;
+    
      float: left;
     position: relative;
     bottom: 50px;
+    width: 250px;
+    height: 300px;
 }
 
 .about {
-   margin-bottom: 500px;
+   margin-bottom: 100px;
 
 }
 
 .about-text {
     max-width: 600px;
    margin: 0;
-float: right;
+padding-left: 30px;
 }
 
-
+.cont {
+    display: flex;
+    justify-content: space-between;
+}
 
 .projects {
 display: flex;
 flex-wrap: wrap;
+
+}
+
+.project-item {
+    margin: 0;
 }
 
 .project-item:not(:nth-last-child(3)) {
@@ -145,13 +162,41 @@ flex-wrap: wrap;
     padding-bottom: 50px;
 }
 
+@media (max-width: 1200px) {
+    .project-item:not(:nth-last-child(2)) {
+        margin-right: 15px;
+        padding-bottom: 50px;
+    }
+
+    .project-item {
+        margin: 0 auto;
+    }
+  }
+
+
+@media (max-width: 980px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        margin: 0 ;
+    }
+}
 
 .pg {
      border-radius: 10%;
-    margin-bottom: px;
+     width: 100%;
 }
  
+.ff {
+	position: relative;
+ width: 367px;
+ top: 0px;
 
+}
 
 .about-header {
     clear: both;
@@ -303,16 +348,13 @@ padding-bottom: 100px;
 }
 
 
-.ff {
-	position: relative;
 
-}
 
 .dark {
     position: absolute;
     background: black;
     width: 100%;
-    height: 397px;
+    height: 99%;
     bottom: 4.2px;
     display: none;
     opacity: .5;
@@ -324,18 +366,18 @@ padding-bottom: 100px;
     display: block;
 }
 
+
 .bat {
     position: absolute;
-    left: 150px;
-    top: 150px;
+    left: 110px;
+    top: 120px;
     display: none;
     background-color: transparent;
     color: white;
     border: 2px solid white;
     text-decoration: none;
-    padding: 0;
     border-radius: 5px;
-    width: 100px;
+    max-width: 100px;
     height: 30px;
     font-family: 'Inter-Medium';
     font-size: 16px;
@@ -343,8 +385,8 @@ padding-bottom: 100px;
 
 .bat2 {
     position: absolute;
-    left: 132px;
-    top: 200px;
+    left: 85px;
+    top: 170px;
     display: none;
     background-color: transparent;
     color: white;
@@ -465,3 +507,4 @@ p[title$="ur"] {
     color: aqua;
 }
 выделение исходя из того на какие значения атрибут заканчивается*/
+
